@@ -1,0 +1,17 @@
+cloud:
+  linode:
+    credentials:
+      access-key: ZVADROBVHWLK1FOYT225
+      secret-key: zn351ii63QgABpz8ABCF3HaZuDIdkRLW9JJ8DlLs
+      endpoint:  https://vb-object-storage.ap-south-1.linodeobjects.com/
+    region:
+      static: ap-south-1
+    stack:
+      auto: false
+
+application:
+  bucket:
+    name: vb-object-storage
+
+server:
+  port: 8082

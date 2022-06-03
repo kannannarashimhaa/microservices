@@ -1,0 +1,24 @@
+server:
+  port: 9090
+
+
+############### API ROUTING ###############
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: upload
+          uri: 'http://localhost:8081/'
+          predicates:
+            - Path=/service/test1/**
+        - id: download
+          uri: 'http://localhost:8082/'
+          predicates:
+            - Path=/service/test2/**
+        - id: delete
+          uri: 'http://localhost:8083/ '
+          predicates:
+            - Path=/service/test3/**
+
+            ############### API ROUTING ###############
